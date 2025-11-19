@@ -2,21 +2,16 @@ type Props = {};
 
 export default function ArrowSVG({}: Props) {
   return (
-    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 52 46"
+      fill="none"
+      className="w-full h-auto"
+    >
       <path
-        d="M5 12h14"
-        stroke="#3F3F3F"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M13 5l7 7-7 7"
-        stroke="#3F3F3F"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+        d="M51.9886 23L30.7955 46L25.9659 41.3863L40.0341 26.2972H0V19.6227H40.0455L25.9773 4.5336L30.8068 0L52 23H51.9886Z"
+        fill="#3E3F3E"
+      ></path>
     </svg>
   );
 }
