@@ -11,8 +11,6 @@ export default function CardsContainer({
   cards,
   layout = "horizontal",
 }: Props) {
-  const isHorizontal = layout === "horizontal";
-
   const containerStyles = {
     clipPath:
       "polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%)",
@@ -25,24 +23,18 @@ export default function CardsContainer({
         style={containerStyles}
       >
         <ol
-          className={`flex ${
-            isHorizontal
-              ? "flex-row items-center justify-between gap-8"
-              : "flex-col items-center gap-10"
-          } `}
+          className={`flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-8 `}
         >
           {/* Desktop: show arrows between items */}
           {cards.map((card, idx) => (
             <li
               key={card.id}
-              className={`${
-                isHorizontal ? "flex flex-1" : "w-full flex justify-center"
-              }`}
+              className={`flex flex-col md:flex-row flex-1 gap-y-8 w-full items-center justify-center`}
             >
               <CardItem card={card} index={idx} />
               {/* add arrow in horizontal layout except last */}
-              {isHorizontal && idx < cards.length - 1 && (
-                <div className="hidden md:flex items-center justify-center mx-4">
+              {idx < cards.length - 1 && (
+                <div className="flex items-center justify-center mx-4 min-w-6 max-w-12 min-h-6 max-h-12 rotate-90 md:rotate-none">
                   <ArrowSVG />
                 </div>
               )}
