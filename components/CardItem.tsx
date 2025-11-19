@@ -7,7 +7,7 @@ interface Props {
 
 export default function CardItem({ card, index }: Props) {
   return (
-    <article className="relative w-full max-w-xs bg-[color:var(--card-surface)] rounded-card shadow-card-lg p-6 border border-neutral-border">
+    <article className="relative w-full max-w-xs bg-(--card-surface) rounded-card shadow-card-lg p-6 border border-neutral-border">
       {/* black title block */}
       <div className="bg-black rounded-sm p-6 text-left text-white">
         <h3 className="font-pp-machina font-semibold text-xl leading-tight">
