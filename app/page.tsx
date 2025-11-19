@@ -28,18 +28,7 @@ export default function Page() {
     <div className="min-h-screen bg-neutral-bg text-neutral-text">
       <div className="container mx-auto">
         <HeroSection />
-        {/* Desktop horizontal layout, mobile vertical layout */}
-
         <CardsContainer cards={cards} />
-
-        {/* decorative / uploaded reference image (from your provided path) */}
-        {/* <div className="mt-12 px-6">
-          <img
-            src={"/mnt/data/Dev Build Test.png"}
-            alt="Figma frame reference"
-            className="mx-auto max-w-full h-auto border border-neutral-border"
-          />
-        </div> */}
       </div>
     </div>
   );

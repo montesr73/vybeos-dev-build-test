@@ -26,6 +26,7 @@ export default function CardItem({ card, index }: Props) {
         className="absolute top-0 left-0 z-10 w-4 h-4 bg-[#b3ff94]"
         style={cardCornerStyles}
       />
+
       <div className="flex flex-col p-2 bg-(--card-surface) h-full">
         {/* black title block */}
         <div
