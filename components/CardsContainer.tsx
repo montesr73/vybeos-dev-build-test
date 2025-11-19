@@ -19,17 +19,17 @@ export default function CardsContainer({
   return (
     <div className="w-full flex justify-center mt-8">
       <div
-        className="cards-bg w-[90%] max-w-6xl rounded-large p-8 md:p-12"
+        className="cards-bg w-full max-w-[1440px] rounded-large p-8 md:p-12"
         style={containerStyles}
       >
         <ol
-          className={`flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-8 `}
+          className={`flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 md:gap-6`}
         >
           {/* Desktop: show arrows between items */}
           {cards.map((card, idx) => (
             <li
               key={card.id}
-              className={`flex flex-col md:flex-row flex-1 gap-y-8 w-full items-center justify-center`}
+              className={`flex flex-col md:flex-row gap-y-8 items-center justify-center`}
             >
               <CardItem card={card} index={idx} />
               {/* add arrow in horizontal layout except last */}
