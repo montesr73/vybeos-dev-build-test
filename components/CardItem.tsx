@@ -37,7 +37,11 @@ export default function CardItem({ card, index }: Props) {
             {card.title.split("\n").map((line, i) => (
               <span
                 key={i}
-                className={i === 1 ? "text-brand-primary block" : "block"}
+                className={`block ${
+                  card.highlight && card.highlight.includes(line)
+                    ? "text-[#b3ff94]"
+                    : ""
+                }`}
               >
                 {line}
               </span>

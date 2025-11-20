@@ -6,18 +6,21 @@ const cards: Card[] = [
   {
     id: 1,
     title: "Train\nYour\nBrand\nMemory",
+    highlight: ["Brand", "Memory"],
     description:
       "Upload your site, assets, and product data. VybeOS builds a private brand memory that captures your tone and design DNA. No shared models, no data leaks.",
   },
   {
     id: 2,
     title: "Generate\nWith\nPrecision",
+    highlight: ["Precision"],
     description:
       "Create complete campaigns in one click. Every line and layout stays true to your brand’s identity, handcrafted quality, automated delivery.",
   },
   {
     id: 3,
     title: "Learn +\nRefine\nSafely",
+    highlight: ["Safely"],
     description:
       "Approve, adjust, and publish inside VybeOS. The system learns only from your edits, closing the loop between performance and creative consistency.",
   },
