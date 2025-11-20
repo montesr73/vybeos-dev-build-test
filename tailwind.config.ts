@@ -7,7 +7,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: "#A7FF6A", // accent green (callouts, highlighted words)
+          primary: "#B3FF94", // accent green (callouts, highlighted words)
           surface: "#E6F7D0", // light card background (pale green)
           containerStart: "#193018", // gradient start
           containerEnd: "#1A1A1A", // gradient end
@@ -15,8 +15,11 @@ export default {
         neutral: {
           bg: "#0E0F0E", // page background
           border: "#3E3F3E", // container border
-          text: "#EDEDED", // light text
+          text: "#0E0F0E", // light text
           muted: "#BFC3BC", // muted description text
+        },
+        badge: {
+          border: "#0E0F0E", // badge border
         },
       },
       fontFamily: {

@@ -34,7 +34,7 @@ export default function CardsContainer({
               <CardItem card={card} index={idx} />
               {/* add arrow in horizontal layout except last */}
               {idx < cards.length - 1 && (
-                <div className="flex items-center justify-center mx-4 min-w-6 max-w-12 min-h-6 max-h-12 rotate-90 md:rotate-none">
+                <div className="flex items-center justify-center mx-4 min-w-6 max-w-12 min-h-6 max-h-12 sm:rotate-90 md:rotate-0">
                   <ArrowSVG />
                 </div>
               )}
