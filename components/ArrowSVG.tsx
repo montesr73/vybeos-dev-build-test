@@ -1,6 +1,4 @@
-type Props = {};
-
-export default function ArrowSVG({}: Props) {
+export default function ArrowSVG() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
