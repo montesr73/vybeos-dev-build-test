@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "PP Neue Machina";
+  src: url("../public/fonts/PPNeueMachina/PPNeueMachina-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/PPNeueMachina/PPNeueMachina-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Helps prevent font flashing */
+}
+
 /* Font face hints - replace URLs with hosted fonts / font-face declarations */
 :root {
   --page-bg: #0e0f0e;
@@ -22,6 +33,7 @@ body,
   background-color: var(--page-bg);
   color: #ededed;
   -webkit-font-smoothing: antialiased;
+  font-family: "PP Neue Machina", sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
