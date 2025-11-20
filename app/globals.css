@@ -1,11 +1,20 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "PP Neue Machina";
-  src: url("../public/fonts/PPNeueMachina/PPNeueMachina-Regular.woff2")
-      format("woff2"),
-    url("../public/fonts/PPNeueMachina/PPNeueMachina-Regular.woff")
-      format("woff");
+  src: url("/fonts/PPNeueMachina/PPNeueMachina-Regular.woff2") format("woff2"),
+    url("/fonts/PPNeueMachina/PPNeueMachina-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* Helps prevent font flashing */
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff2") format("woff2"),
+    url("/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap; /* Helps prevent font flashing */
